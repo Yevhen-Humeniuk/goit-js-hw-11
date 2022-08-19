@@ -32,7 +32,6 @@ const observerOptions = {
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            // console.log('!!! INTERSECTING !!!');
             
             if (isLastPage(fetchOptions)) {
                 Notify.warning("We're sorry, but you've reached the END of search results.", notifyOptions);
@@ -95,7 +94,6 @@ async function onLoadMoreImages() {
 }
 
 function setObserveOn() {
-    // document.querySelector('#scroll-check').classList.add('scroll-check');
     observer.observe(document.querySelector('.scroll-check'));
 };
 

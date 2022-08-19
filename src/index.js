@@ -99,7 +99,6 @@ function setObserveOn() {
 
 function setObserveOff() {
     observer.unobserve(document.querySelector('.scroll-check'));
-    // document.querySelector('#scroll-check').classList.remove('scroll-check');
 };
 
 function drawGallery({data}) {
